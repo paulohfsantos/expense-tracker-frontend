@@ -1,8 +1,7 @@
 <template>
-  <div>
-    <h4>Your Balance</h4>
-
-    <span>{{ finalTotal }}</span>
+  <div class="p-4 rounded-lg bg-base-200 mt-4">
+    <h4 class="font-semibold">Your Balance</h4>
+    <span class="text-xl font-bold">{{ finalTotal }}</span>
   </div>
 </template>
 
