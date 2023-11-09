@@ -8,7 +8,7 @@
     <div class="flex-none">
       <div class="px-3">
         <select data-choose-theme class="select select-bordered w-full max-w-xs select-sm">
-          <option v-for="theme in themes" :value="theme" :key="theme">
+          <option v-for="theme in themes" :value="theme" :key="`theme__${theme}`">
             {{ theme }}
           </option>
         </select>
