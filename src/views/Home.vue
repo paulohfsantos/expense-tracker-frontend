@@ -1,6 +1,6 @@
 <template>
   <div>
-    <balance />
+    <balance :total="500" />
     home page
   </div>
 </template>
