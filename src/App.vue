@@ -1,15 +1,18 @@
 <script setup lang="ts">
-const msg = 'Hello Vue 3 + TypeScript + Vite'
+import HomePage from './views/Home.vue'
+import NavMenu from './components/NavMenu.vue';
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      header
-    </div>
-  </header>
+  <nav-menu />
 
   <main>
-    main content {{ msg }}
+    <div class="hero min-h-screen bg-base-200">
+    <div class="hero-content">
+      <div class="max-w-xl">
+        <home-page />
+      </div>
+    </div>
+  </div>
   </main>
 </template>

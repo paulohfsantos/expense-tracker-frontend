@@ -1,7 +1,7 @@
 /* eslint-env node */
-require('@rushstack/eslint-patch/modern-module-resolution')
+import '@rushstack/eslint-patch/modern-module-resolution'
 
-module.exports = {
+export default {
   root: true,
   'extends': [
     'plugin:vue/vue3-essential',
@@ -16,10 +16,13 @@ module.exports = {
       ],
       'extends': [
         'plugin:cypress/recommended'
-      ]
+      ],
     }
   ],
   parserOptions: {
     ecmaVersion: 'latest'
-  }
+  },
+  rules: {
+    'vue/multi-word-component-names': 'off'
+  },
 }
